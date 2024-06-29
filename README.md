@@ -1,4 +1,4 @@
-### Final assessment for Advanced db course
+### Final assessment for M605 Advanced Databases module
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-orange.svg)](https://www.postgresql.org/)
 
