@@ -42,8 +42,8 @@ VALUES
 
 INSERT INTO Product (Name, SupplierID, Description, Price, CategoryID, Image)
 VALUES
-    ('Smartphone 1', 1, 'Smartphone 1 test', 599.99, 1, ''),
-    ('Laptop 1', 2, 'Laptop 1 test', 999.99, 1, ''),
+    ('Smartphone 1', 1, 'Smartphone 1 test', 599.99, 1, 'https://github.com/Pakhomovskii/gisma-advanced-db-course/blob/main/data/images/smartphone.png'),
+    ('Laptop 1', 2, 'Laptop 1 test', 999.99, 1, 'https://github.com/Pakhomovskii/gisma-advanced-db-course/blob/main/data/images/laptop.png'),
     ('T-shirt 1', 3, 'T-shirt 1 test', 19.99, 2, null),
     ('Book 1', 4, 'Book 1 test', 9.99, 3, null),
     ('Tool Set Big', 6, 'Tool set test', 49.99, 4, null),
