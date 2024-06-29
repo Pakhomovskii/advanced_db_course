@@ -11,7 +11,8 @@ This project focuses on the design and normalization of a database for an online
 - **reporting.sql** DML commands to see specific reports 
 
 ### ER Diagram
-![d](https://github.com/Pakhomovskii/gisma-advanced-db/assets/69305661/b00d5246-9365-4f69-8218-c9684151ddf3)
+![image](https://github.com/Pakhomovskii/gisma-advanced-db/assets/69305661/6a33e347-ae2f-4b06-b0d2-b8384069c2e0)
+
 
 you can try it with:
 ```bash
