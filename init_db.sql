@@ -1,10 +1,12 @@
 CREATE DATABASE online_shop;
 \c online_shop;
 
--- Creation extensions, types and  roles
+-- Creation extensions
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- Creation types
 CREATE TYPE OrderStatus AS ENUM ('pending', 'processing', 'shipped', 'delivered', 'cancelled');
 CREATE TYPE CustomerStatus AS ENUM ('active', 'inactive', 'banned');
+-- Creation roles and permissions
 CREATE ROLE readonly_user WITH LOGIN PASSWORD '12345';
 GRANT CONNECT ON DATABASE online_shop TO readonly_user;
 GRANT USAGE ON SCHEMA public TO readonly_user;
