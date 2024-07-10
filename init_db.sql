@@ -45,6 +45,7 @@ CREATE TABLE Product (
     SupplierID INT REFERENCES Supplier(SupplierID),
     Description TEXT,
     Price NUMERIC(10, 2) NOT NULL CHECK (Price > 0),
+    Image TEXT NULL,
     CategoryID INT REFERENCES Category(CategoryID),
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UpdatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -84,21 +85,4 @@ CREATE TABLE ReturnedItem (
     ReturnDate DATE NOT NULL,
     Reason TEXT,
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE ProductImage (
-    ImageID SERIAL PRIMARY KEY,
-    ProductID INT REFERENCES Product(ProductID) ON DELETE CASCADE,
-    ImageURL TEXT NOT NULL
-);
-
-CREATE TABLE Tag (
-    TagID SERIAL PRIMARY KEY,
-    TagName VARCHAR(50) UNIQUE NOT NULL
-);
-
-CREATE TABLE ProductTag (
-    ProductID INT REFERENCES Product(ProductID) ON DELETE CASCADE,
-    TagID INT REFERENCES Tag(TagID) ON DELETE CASCADE,
-    PRIMARY KEY (ProductID, TagID) 
 );
