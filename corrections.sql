@@ -1,3 +1,6 @@
+ALTER TABLE Product
+DROP COLUMN Images;
+
 CREATE TABLE ProductImage (
     ImageID SERIAL PRIMARY KEY,
     ProductID INT REFERENCES Product(ProductID) ON DELETE CASCADE,
