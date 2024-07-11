@@ -12,7 +12,7 @@ This project focuses on the design and normalization of a database for an online
 
 ### ER Diagram (new version)
 
-<img width="1269" alt="Screenshot 2024-07-11 at 07 33 23" src="https://github.com/Pakhomovskii/gisma-advanced-db/assets/69305661/4d3636aa-2f22-44af-b504-20c6713a2e51">
+<img width="1338" alt="Screenshot 2024-07-11 at 07 36 39" src="https://github.com/Pakhomovskii/gisma-advanced-db/assets/69305661/7c9b1b2c-93ea-40bb-b0d4-b0b8ad5df99a">
 
 ### ER Diagram (old version)
 
