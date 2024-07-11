@@ -44,7 +44,7 @@ CREATE TABLE Product (
     Name VARCHAR(48) NOT NULL,
     SupplierID INT REFERENCES Supplier(SupplierID),
     Description TEXT,
-    Image TEXT.
+    Image TEXT,
     Price NUMERIC(10, 2) NOT NULL CHECK (Price > 0),
     CategoryID INT REFERENCES Category(CategoryID),
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
