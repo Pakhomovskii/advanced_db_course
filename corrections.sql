@@ -1,7 +1,5 @@
--- Remove the Image column from the Product table
 ALTER TABLE Product DROP COLUMN IF EXISTS Image;
 
--- Create the Image table
 CREATE TABLE Image (
     ImageID SERIAL PRIMARY KEY,
     ProductID INT REFERENCES Product(ProductID),
@@ -9,11 +7,9 @@ CREATE TABLE Image (
     IsMainImage BOOLEAN DEFAULT FALSE
 );
 
--- Create an index on the ProductID column for faster queries
 CREATE INDEX idx_image_product ON Image (ProductID);
 
 
--- Insert into the Image table
 INSERT INTO Image (ProductID, ImageURL, IsMainImage)
 VALUES
     (1, 'https://example.com/image1.jpg', TRUE),
