@@ -24,3 +24,15 @@ you can try it with (It is my private server):
 psql -h 34.133.15.56 -U readonly_user -d online_shop
 ```
 password: 12345
+```sql
+-- Information about suppliers and the number of products they provide:	
+SELECT * FROM View_SupplierProductCount;
+-- Top 10 best-selling products with the total amount sold and their supplier:	
+SELECT * FROM View_Top10SellingProducts;
+-- List of customers and their total purchases:	
+SELECT * FROM View_CustomerTotalPurchases;
+-- List of returned items:	
+SELECT * FROM View_ReturnedItems;
+-- List of products in the fashion category that were sold last month:	
+SELECT * FROM View_FashionProductsSoldLastMonth;
+```
