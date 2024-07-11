@@ -8,9 +8,13 @@ This project focuses on the design and normalization of a database for an online
 
 - **insert.sql** insertion sample data in DB
 
-- **reporting.sql** DML commands to see specific reports 
+- **reporting.sql** DML commands to see specific reports
 
-### ER Diagram
+### ER Diagram (new version)
+
+<img width="1269" alt="Screenshot 2024-07-11 at 07 33 23" src="https://github.com/Pakhomovskii/gisma-advanced-db/assets/69305661/4d3636aa-2f22-44af-b504-20c6713a2e51">
+
+### ER Diagram (old version)
 
 <img width="1290" alt="Screenshot 2024-07-01 at 08 37 53" src="https://github.com/Pakhomovskii/gisma-advanced-db/assets/69305661/39b9cc69-f0c3-4176-a3fb-75ef388d53ec">
 
